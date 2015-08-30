@@ -2,7 +2,10 @@
 echo "INFO: python 2.6+ and pip should be installed first."
 echo "INFO: this script has been tested on ubuntu."
 
-# install protobuf
+######################
+# install protobuf   #
+######################
+
 git clone https://github.com/google/protobuf
 cd protobuf
 ./autogen.sh
@@ -23,8 +26,10 @@ python setup.py install
 cd ../../
 
 
+#######################
+# install grpc itself #
+#######################
 
-# install grpc itself
 git clone https://github.com/grpc/grpc
 cd grpc
 git submodule update --init
